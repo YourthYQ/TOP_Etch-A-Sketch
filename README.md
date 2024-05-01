@@ -1,6 +1,6 @@
 # TOP_Etch-A-Sketch
 
-Etch-a-Sketch | The Odin Project | Foundation
+The Odin Project | Foundation | Etch-a-Sketch
 
 GitHub Rep: [TOP_Etch-A-Sketch @YourthYQ](https://github.com/YourthYQ/TOP_Etch-A-Sketch/)
 
