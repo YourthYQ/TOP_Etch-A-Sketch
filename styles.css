@@ -1,0 +1,84 @@
+html {
+    height: 100%;   /* Ensure the full height is utilized */
+    margin: 0;      /* Remove default margin */
+}
+
+body {
+    height: 100%;   /* Ensure the full height is utilized */
+    margin: 0;      /* Remove default margin */
+    display: flex;  /* Utilize flexbox for centering */
+    justify-content: center;  /* Horizontal centering */
+    align-items: center;      /* Vertical centering */
+    background: linear-gradient(
+    to right,
+    rgba(0, 174, 255, 0.95),
+    rgb(0, 255, 123)
+  );
+}
+
+.canvas {
+    display: flex;  /* Utilize flexbox for centering */
+    flex-direction: column;
+    justify-content: center;  /* Horizontal centering */
+    align-items: center;      /* Vertical centering */
+    
+    row-gap: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+button {
+    background-color: rgb(255, 243, 202);
+    color: rgb(255, 105, 105);
+    font-size: large;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.container {
+    /* The vmin unit represents the smaller of vw (viewport width) or vh (viewport height). 
+     * Setting both width and height to 70vmin ensures that the square will fit within both dimensions of the viewport, 
+     * maintaining its shape even on smaller or differently proportioned screens. */
+    height: 70vmin; /* 70% of the viewport height */
+    width: 70vmin; /* Equal width to height to maintain square shape */
+    background-color: rgb(255, 255, 255); /* Red background, change as needed */
+    border: 2px solid white;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    overflow: hidden;
+    /* flex-wrap: nowrap; */
+    /* By default, flex containers have flex-wrap set to nowrap, 
+     * which means all flex items will try to fit into a single line, 
+     * even if it means they have to shrink or overflow the container. */
+
+    /* flex-wrap: wrap */
+    /* This means if there isn't enough space to fit all items on one line, 
+     * additional lines are added below the first to accommodate the remaining items. */
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.row {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pixel {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    /*border: 1px solid black; /* Borders for each pixel */
+}
