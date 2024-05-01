@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html {
     height: 100%;   /* Ensure the full height is utilized */
     margin: 0;      /* Remove default margin */
@@ -5,28 +7,30 @@ html {
 
 body {
     height: 100%;   /* Ensure the full height is utilized */
-    margin: 0;      /* Remove default margin */
     display: flex;  /* Utilize flexbox for centering */
-    justify-content: center;  /* Horizontal centering */
+    flex-direction: column; /* Arrange children (canvas and footer) vertically */
+    row-gap: 10px;
+    justify-content: space-between;  /* Horizontal centering */
     align-items: center;      /* Vertical centering */
     background: linear-gradient(
-    to right,
-    rgba(0, 174, 255, 0.95),
-    rgb(0, 255, 123)
-  );
+        to right,
+        rgba(0, 174, 255, 0.95),
+        rgb(0, 255, 123)
+    );
+    font-family: "Roboto", sans-serif;
 }
 
 .canvas {
     display: flex;  /* Utilize flexbox for centering */
     flex-direction: column;
     justify-content: center;  /* Horizontal centering */
-    align-items: center;      /* Vertical centering */
-    
-    row-gap: 20px;
+    align-items: center;      /* Vertical centering */    
+    row-gap: 10px;
 }
 
 h1 {
     color: white;
+    font-size: xx-large;
 }
 
 button {
@@ -81,4 +85,25 @@ button {
     width: 100%;
     border-radius: 5px;
     /*border: 1px solid black; /* Borders for each pixel */
+}
+
+button {
+    margin-top: 10px;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    column-gap: 10px;
+}
+
+footer i {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
 }

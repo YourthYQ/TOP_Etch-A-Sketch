@@ -7,7 +7,7 @@ gridSize = parseInt(gridSize);  // Convert the input to an integer
 
 // Check if the input is valid
 if (gridSize <= 0 || gridSize > 100) {
-    alert("Please enter a valid number greater than 0 and less then or equal to 100.");
+    alert("Please enter a valid number betweem 1 and 100.");
 }
 
 // Variable to track if the mouse is held down
